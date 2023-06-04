@@ -14,5 +14,5 @@ namespaces:
     labels:
       service: "myapp"
       environment: "production"
-      hostname: "myapp.example.com"
+      hostname: "web"
     histogram_buckets: [.005, .01, .025, .05, .1, .25, .5, 1, 2.5, 5, 10]
