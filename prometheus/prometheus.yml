@@ -5,21 +5,19 @@ scrape_configs:
   - job_name: "nodes"
     file_sd_configs:
     - files:
-      - /etc/prometheus/sd_files/nodeexporter.yml
+      - /etc/prometheus/service_discovery/nodeexporter.yml
       refresh_interval: 1m
 
   - job_name: "nginx"
     scrape_interval: 15s
     static_configs:
       - targets: 
-        - http11.dip:4040
-        - http22.dip:4040
+        - web1.srv:4040
+        - web2.srv:4040
     
   
 rule_files:
   - 'alert.rules'
-#  - 'docker.rules'
-#  - 'icmp.rules'
 
 alerting:
   alertmanagers:
