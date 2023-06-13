@@ -6,14 +6,13 @@
     env: 'prometheus'
 
 - targets:
-  - 'http11.dip:9100'
+  - 'web1.srv:9100'
   labels:
-    project: 'http11'
+    project: 'web1'
     env: 'ya_cloud_b'
 
 - targets:
-  - 'http22.dip:9100'
+  - 'web2.srv:9100'
   labels:
-    project: 'http22'
+    project: 'web2'
     env: 'ya_cloud_a'
-
