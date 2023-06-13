@@ -1,0 +1,19 @@
+
+- targets:
+  - 'localhost:9090'
+  labels:
+    project: 'localhost'
+    env: 'prometheus'
+
+- targets:
+  - 'http11.dip:9100'
+  labels:
+    project: 'http11'
+    env: 'ya_cloud_b'
+
+- targets:
+  - 'http22.dip:9100'
+  labels:
+    project: 'http22'
+    env: 'ya_cloud_a'
+
