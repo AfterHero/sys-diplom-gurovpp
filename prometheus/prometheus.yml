@@ -5,7 +5,7 @@ scrape_configs:
   - job_name: "nodes"
     file_sd_configs:
     - files:
-      - /etc/prometheus/service_discovery/nodeexporter.yml
+      - /etc/prometheus/sd_files/nodeexporter.yml
       refresh_interval: 1m
 
   - job_name: "nginx"
