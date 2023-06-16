@@ -8,7 +8,7 @@
 - targets:
   - 'web1.srv:9100'
   labels:
-    project: 'web11'
+    project: 'web1'
     env: 'ya_cloud_b'
 
 - targets:
