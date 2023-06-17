@@ -1,0 +1,42 @@
+
+cluster.name: netology-dip 
+cluster.initial_master_nodes: ["node-1"] 
+node.name: node-1 
+node.roles: [ master, data] 
+
+#cluster.initial_master_nodes: ["node-1"] 
+#discovery.seed_hosts: ["10.129.0.10"] 
+
+
+
+path.data: /var/lib/elasticsearch # директория для хранения данных
+path.logs: /var/log/elasticsearch
+network.host: 0.0.0.0 # слушаем только локальный интерфейс
+http.host: 0.0.0.0 # слушаем только локальный интерфейс
+http.port: 9200	
+
+
+# This turns on SSL for the HTTP (Rest) interface
+#xpack.security.http.ssl.enabled: true
+
+# This configures the keystore to use for SSL on HTTP
+#xpack.security.http.ssl.keystore.path: "http.p12"
+
+
+xpack.security.enabled: true
+#xpack.security.http.ssl.enabled: true
+#xpack.security.http.ssl.keystore.path: /etc/elasticsearch/certs/elastic-certificates.p12
+#xpack.security.http.ssl.keystore.password: liferay
+#xpack.security.http.ssl.truststore.path: /etc/elasticsearch/certs/elastic-certificates.p12
+#xpack.security.http.ssl.truststore.password: liferay
+
+#xpack.security.transport.ssl.enabled: true
+#xpack.security.transport.ssl.verification_mode: certificate 
+#xpack.security.transport.ssl.client_authentication: required
+#xpack.security.transport.ssl.keystore.path: /etc/elasticsearch/elastic-certificates.p12
+#xpack.security.transport.ssl.truststore.path: /etc/elasticsearch/elastic-certificates.p12
+
+
+#xpack.license.self_generated.type: basic
+#bootstrap.memory_lock: true
+#discovery.seed_hosts: ["127.0.0.1", "[::1]"]
