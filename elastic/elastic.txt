@@ -1,1 +1,3 @@
 https://www.dropbox.com/s/z6jqc0sf5p6qpah/elasticsearch-8.8.1-x86_64.rpm
+
+https://www.dropbox.com/s/18pohk7crhud8u4/elasticsearch-8.6.1-x86_64.rpm
