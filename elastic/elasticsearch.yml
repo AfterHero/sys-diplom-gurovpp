@@ -11,4 +11,4 @@ network.host: 0.0.0.0
 http.host: 0.0.0.0
 http.port: 9200
 
-xpack.security.enabled: true
+xpack.security.enabled: false
