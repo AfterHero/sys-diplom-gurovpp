@@ -44,7 +44,7 @@ server.host: "0.0.0.0"
 
 # =================== System: Elasticsearch ===================
 # The URLs of the Elasticsearch instances to use for all your queries.
-elasticsearch.hosts: ["http://elastic11.dip:9200"]
+elasticsearch.hosts: ["http://elastic.srv:9200"]
 
 
 # If your Elasticsearch is protected with basic authentication, these settings provide
