@@ -1,1 +1,2 @@
 https://www.dropbox.com/s/0gdv8fl2zu4zr3i/kibana-8.6.1-x86_64.rpm
+https://www.dropbox.com/s/yru6zh8hyxg83yq/kibana-8.6.2-x86_64.rpm
