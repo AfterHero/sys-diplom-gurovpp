@@ -2,7 +2,7 @@
 cluster.name: netology 
 #
 node.name: node-1 
-node.roles: [ master, data]
+node.roles: [master, data, ingest]
 #
 path.data: /var/lib/elasticsearch
 path.logs: /var/log/elasticsearch
@@ -13,7 +13,7 @@ http.port: 9200
 #discovery.seed_hosts: ["127.0.0.1"]
 cluster.initial_master_nodes: ["node-1"]
 # Enable security features
-xpack.security.enabled: false
+xpack.security.enabled: true
 xpack.security.enrollment.enabled: true
 
 xpack.security.http.ssl:
