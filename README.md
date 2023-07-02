@@ -81,7 +81,7 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 5. kibana.srv - сервер визуализации логов (также из стека ELK);
 6. sshgw.srv - (ssh gateway), сервер, позволяющий получить доступ к остальным серверам инфраструктуры по протоколу ssh.
 
-
+### Сайт
 На первом этапе разворачиваем серверы nginx и балансировщик, создаем "Tagget group", "Backend group", "HTTP router" и "Application load balancer" (ALB). Данным элементам соответствуют блоки кода "Web Server 1", "Web Server 2", "Target group for ALB", "Backend group for ALB", "ALB router", "ALB virtual host", "ALB" в основном конфигурационном файле terraform main.tf, листинг которого доступен по ссылке  
 
 https://github.com/ta7575/sys-diplom/blob/main/config/main.tf  
@@ -109,13 +109,20 @@ https://github.com/ta7575/sys-diplom/blob/main/config/meta-web2.yml
 ![Рисунок 3](/img/img3.PNG)  
 Рисунок 3.  
 
-Добавляем сервер prometheus (блок кода "Prometheus Server" в конфигурационном файле main.tf). Листинг файла terraform-конфигурации prometheus доступен по ссылке ниже  
+### Мониторинг
+
+Добавляем сервер prometheus (блок кода "Prometheus Server" в конфигурационном файле main.tf). Листинг файла terraform-конфигурации prometheus доступен по ссылке  
 
 https://github.com/ta7575/sys-diplom/blob/main/prometheus/meta-prometheus.yml  
 
 Файл конфигурации prometheus - по ссылке  
 
 https://github.com/ta7575/sys-diplom/blob/main/prometheus/prometheus.yml  
+
+
+Добавляем сервер визуализации grafana (блок кода Grafana Server в конфигурационном файле main.tf). Листинг файла terraform-конфигурации grafana доступен по ссылке  
+
+https://github.com/ta7575/sys-diplom/blob/main/grafana/meta-grafana.yml  
 
 
 
