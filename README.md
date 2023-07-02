@@ -86,7 +86,7 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 
 https://github.com/ta7575/sys-diplom/blob/main/config/main.tf  
 
-Листинг файлов конфигураций веб-серверов web1.srv и web2.srv доступен по ссылкам  
+Листинг файлов terraform-конфигураций веб-серверов web1.srv и web2.srv доступен по ссылкам  
 
 https://github.com/ta7575/sys-diplom/blob/main/config/meta-web1.yml  
 и  
@@ -108,6 +108,14 @@ https://github.com/ta7575/sys-diplom/blob/main/config/meta-web2.yml
 
 ![Рисунок 3](/img/img3.PNG)  
 Рисунок 3.  
+
+Добавляем сервер prometheus (блок кода "Prometheus Server" в конфигурационном файле main.tf). Листинг файла terraform-конфигурации prometheus доступен по ссылке ниже  
+
+https://github.com/ta7575/sys-diplom/blob/main/prometheus/meta-prometheus.yml  
+
+Файл конфигурации prometheus - по ссылке  
+
+https://github.com/ta7575/sys-diplom/blob/main/prometheus/prometheus.yml  
 
 
 
