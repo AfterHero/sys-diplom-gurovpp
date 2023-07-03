@@ -182,7 +182,7 @@ https://github.com/ta7575/sys-diplom/blob/main/elastic/meta-elastic.yml
 
 https://github.com/ta7575/sys-diplom/blob/main/elastic/elasticsearch.yml  
 
-Файлы конфигурации lohstash - по ссылкам  
+Файлы конфигурации logstash - по ссылкам  
 
 https://github.com/ta7575/sys-diplom/blob/main/elastic/logstash/input.conf  
 
