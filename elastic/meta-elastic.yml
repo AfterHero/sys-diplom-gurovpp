@@ -28,7 +28,6 @@ packages:
   - java-11-openjdk
 
 runcmd:
-# - [sh, -c, "wget -P /tmp/ https://www.dropbox.com/s/18pohk7crhud8u4/elasticsearch-8.6.1-x86_64.rpm"]
  - [sh, -c, "wget -P /tmp/ https://www.dropbox.com/s/udc91yvlx3lnlwy/elasticsearch-8.6.2-x86_64.rpm"]
  - [sh, -c, "rpm --install /tmp/elasticsearch-8.6.2-x86_64.rpm"]
  - [sh, -c, "mv /etc/elasticsearch/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml.bak"]
