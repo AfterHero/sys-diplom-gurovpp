@@ -212,7 +212,7 @@ https://github.com/ta7575/sys-diplom/blob/main/config/filebeat.yml
 Рисунок 14.  
 ` `  
 
-Создаем токен для кодключения сервера визуализации kibana к elasticsearch (рисунок 15)  
+Создаем токен для подключения сервера визуализации kibana к elasticsearch (рисунок 15)  
 
 ![Рисунок 15](/img/img15.PNG)  
 Рисунок 15.  
