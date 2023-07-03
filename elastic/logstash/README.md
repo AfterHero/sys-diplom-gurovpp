@@ -1,1 +1,1 @@
-Logstash configuration files
+Файлы конфигурации logstash
