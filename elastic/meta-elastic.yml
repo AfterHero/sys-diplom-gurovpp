@@ -29,11 +29,23 @@ packages:
 
 runcmd:
  - [sh, -c, "wget -P /tmp/ https://www.dropbox.com/s/udc91yvlx3lnlwy/elasticsearch-8.6.2-x86_64.rpm"]
+ - [sh, -c, "wget -P /tmp/ https://www.dropbox.com/s/zfh0522d1r5m9s6/logstash-8.6.2-x86_64.rpm"]
+
  - [sh, -c, "rpm --install /tmp/elasticsearch-8.6.2-x86_64.rpm"]
+ - [sh, -c, "rpm --install /tmp/logstash-8.6.2-x86_64.rpm"]
  - [sh, -c, "mv /etc/elasticsearch/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml.bak"]
  - [sh, -c, "wget -P /etc/elasticsearch/ https://github.com/ta7575/sys-diplom/raw/main/elastic/elasticsearch.yml"]
+
+ - [sh, -c, "wget -P /etc/logstash/conf.d/ https://github.com/ta7575/sys-diplom/raw/main/elastic/logstash/input.conf"]
+
+ - [sh, -c, "wget -P /etc/logstash/conf.d/ https://github.com/ta7575/sys-diplom/raw/main/elastic/logstash/filter.conf"]
+
+ - [sh, -c, "wget -P /etc/logstash/conf.d/ https://github.com/ta7575/sys-diplom/raw/main/elastic/logstash/output.conf"]
 
  - [sh, -c, "chmod 664 /etc/elasticsearch/elasticsearch.yml"]
  - [systemctl, daemon-reload]
  - [systemctl, enable, elasticsearch.service]
+ - [systemctl, enable, logstash.service]
+
  - [systemctl, start, --no-block, elasticsearch.service]
+ - [systemctl, start, --no-block, logstash.service]
