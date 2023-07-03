@@ -170,8 +170,61 @@ https://github.com/ta7575/sys-diplom/blob/main/grafana/meta-grafana.yml
 
 ### Логи  
 
-Добавляем в основной файл конфигурации терраформ main.tf блок кода "ElasticSearch Server", развертывающий сервер elasticserch с logstash.  
+Добавляем в основной файл конфигурации терраформ main.tf блок кода "ElasticSearch Server", развертывающий сервер elasticserch с logstash. Добавляем в main.tf блок кода "Kibana Server", отвечающий за развертывание сервера kibana.  
 
+Листинг файла terraform-конфигурации сервера elasticsearch доступен по ссылке  
+
+https://github.com/ta7575/sys-diplom/blob/main/elastic/meta-elastic.yml  
+
+Листинг файла конфигурации elasticsearch доступен по ссылке  
+
+https://github.com/ta7575/sys-diplom/blob/main/elastic/elasticsearch.yml  
+
+Файлы конфигурации lohstash - по ссылкам  
+
+https://github.com/ta7575/sys-diplom/blob/main/elastic/logstash/input.conf  
+
+https://github.com/ta7575/sys-diplom/blob/main/elastic/logstash/filter.conf  
+
+https://github.com/ta7575/sys-diplom/blob/main/elastic/logstash/output.conf  
+
+Кроме того в файлы terraform-конфигураций веб-серверов добавлен код установки filebeat - поставщика данных для стека ELK.  
+
+Листинг файла конфигурации filebeat доступен поссылке  
+
+https://github.com/ta7575/sys-diplom/blob/main/config/filebeat.yml  
+
+Запускаем terraform и собираем инфраструктуру (рисунок 12)  
+
+![Рисунок 12](/img/img12.PNG)  
+Рисунок 12.  
+` `  
+Устанавливаем пароль суперюзера сервера elasticsearch (рисунок 13)  
+
+![Рисунок 13](/img/img13.PNG)  
+Рисунок 13.  
+` `  
+Проверяем работу ноды elasticsearch (рисунок 14)  
+
+![Рисунок 14](/img/img14.PNG)  
+Рисунок 14.  
+` `  
+
+Создаем токен для кодключения сервера визуализации kibana к elasticsearch (рисунок 15)  
+
+![Рисунок 15](/img/img15.PNG)  
+Рисунок 15.  
+` `  
+
+Подключаемся к серверу kibana по ssh и редактируем файл конфигурации, в котором разрешаем подключение к kibana с других хостов (рисунок 16, 17)  
+
+![Рисунок 16](/img/img16.PNG)  
+Рисунок 16.  
+` `  
+
+![Рисунок 17](/img/img17.PNG)  
+Рисунок 17.  
+` `  
 
 
 **Важно**: Ещё можно задавать вопросы по поводу того, как реализовать ту или иную функциональность. И руководитель определяет, правильно вы её реализовали или нет. Любые вопросы, которые не освещены в этом документе, стоит уточнять у руководителя. Если его требования и указания расходятся с указанными в этом документе, то приоритетны требования и указания руководителя.
