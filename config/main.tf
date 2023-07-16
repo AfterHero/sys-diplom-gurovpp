@@ -386,7 +386,6 @@ resource "yandex_vpc_address" "addr-1" {
 
   external_ipv4_address {
     zone_id                  = "ru-central1-a"
-#    ddos_protection_provider = "qrator"
   }
 }
 
@@ -498,23 +497,14 @@ resource "yandex_alb_load_balancer" "alb-1" {
 output "internal-web1" {
   value = yandex_compute_instance.web1.network_interface.0.ip_address
 }
-#output "external-web1" {
-#  value = yandex_compute_instance.web1.network_interface.0.nat_ip_address
-#}
 
 output "internal-web2" {
   value = yandex_compute_instance.web2.network_interface.0.ip_address
 }
-#output "external-web2" {
-#  value = yandex_compute_instance.web2.network_interface.0.nat_ip_address
-#}
 
 output "internal-prometheus" {
   value = yandex_compute_instance.prometheus.network_interface.0.ip_address
 }
-#output "external-prometheus" {
-#  value = yandex_compute_instance.prometheus.network_interface.0.nat_ip_address
-#}
 
 output "internal-grafana" {
   value = yandex_compute_instance.grafana.network_interface.0.ip_address
@@ -526,9 +516,6 @@ output "external-grafana" {
 output "internal-elastic" {
   value = yandex_compute_instance.elasticsearch.network_interface.0.ip_address
 }
-#output "external-elastic" {
-#  value = yandex_compute_instance.elasticsearch.network_interface.0.nat_ip_address
-#}
 
 output "internal-kibana" {
   value = yandex_compute_instance.kibana.network_interface.0.ip_address
@@ -544,15 +531,10 @@ output "external-sshgw" {
   value = yandex_compute_instance.sshgw.network_interface.0.nat_ip_address
 }
 
-
 #output "external-alb" {
 #  value = yandex_alb_load_balancer.alb-1.listener[0].endpoint[0].address[0].external_ipv4_address[0].address
 #}
 
 output "external-alb" {
   value = yandex_vpc_address.addr-1.external_ipv4_address[0].address
-}
-
-output "sshgw-disk-0" {
-  value = yandex_compute_instance.sshgw.boot_disk[0].disk_id
 }
