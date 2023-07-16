@@ -1,12 +1,5 @@
 #cloud-config
 users:
- - name: voronov
-   groups: sudo
-   shell: /bin/bash
-   sudo: ['ALL=(ALL) NOPASSWD:ALL']
-   ssh-authorized-keys:
-     - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKwjW1XoEfU1b6krtqxBE11GK0HsgUd7kRKoug7z+ppU
-
  - name: ansible
    groups: sudo
    shell: /bin/bash
@@ -41,7 +34,6 @@ runcmd:
  - [sh, -c, "rm /etc/filebeat/filebeat.yml"]
  - [sh, -c, "wget -P /etc/filebeat https://github.com/ta7575/sys-diplom/raw/main/config/filebeat.yml"]
  
-
  - [systemctl, enable, filebeat.service]
  - [systemctl, enable, nginx.service]
  - [systemctl, start, --no-block, nginx.service]
@@ -50,4 +42,3 @@ runcmd:
  - [systemctl, start, --no-block, node_exporter.service]
  - [systemctl, start, --no-block, prometheus-nginxlog-exporter.service]
  - [systemctl, start, --no-block, filebeat.service]
-
