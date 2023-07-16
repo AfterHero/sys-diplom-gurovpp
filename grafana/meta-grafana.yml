@@ -1,12 +1,5 @@
 #cloud-config
 users:
- - name: voronov
-   groups: sudo
-   shell: /bin/bash
-   sudo: ['ALL=(ALL) NOPASSWD:ALL']
-   ssh-authorized-keys:
-     - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKwjW1XoEfU1b6krtqxBE11GK0HsgUd7kRKoug7z+ppU
-
  - name: ansible
    groups: sudo
    shell: /bin/bash
