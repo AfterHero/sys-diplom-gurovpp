@@ -1,12 +1,5 @@
 #cloud-config
 users:
- - name: voronov
-   groups: sudo
-   shell: /bin/bash
-   sudo: ['ALL=(ALL) NOPASSWD:ALL']
-   ssh-authorized-keys:
-     - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKwjW1XoEfU1b6krtqxBE11GK0HsgUd7kRKoug7z+ppU
-
  - name: ansible
    groups: sudo
    shell: /bin/bash
@@ -22,7 +15,6 @@ dnf:
   preserve_sources_list: true
 
 packages:
-  
  - wget
 
 runcmd:
@@ -36,15 +28,12 @@ runcmd:
  - [sh, -c, "sudo mkdir  /var/lib/prometheus"]
  - [sh, -c, "chmod -R 0774  /var/lib/prometheus"]
  - [sh, -c, "chown -R prometheus:prometheus  /var/lib/prometheus"]
- 
  - [sh, -c, "sudo cp -r /prometheus-2.44.0.linux-amd64/consoles /etc/prometheus"]
  - [sh, -c, "sudo cp -r /prometheus-2.44.0.linux-amd64/console_libraries /etc/prometheus"]
  - [sh, -c, "sudo wget -P /etc/prometheus/ https://github.com/ta7575/sys-diplom/raw/main/prometheus/prometheus.yml"]
  - [sh, -c, "sudo mkdir /etc/prometheus/sd_files/"]
  - [sh, -c, "sudo wget -P /etc/prometheus/sd_files/ https://github.com/ta7575/sys-diplom/raw/main/prometheus/nodeexporter.yml"] 
-
  - [sh, -c, "sudo wget -P /etc/systemd/system/ https://github.com/ta7575/sys-diplom/raw/main/prometheus/prometheus.service"] 
-
  - [sh, -c, "wget -P /tmp/ https://github.com/prometheus/alertmanager/releases/download/v0.25.0/alertmanager-0.25.0.linux-amd64.tar.gz"]
  - [sh, -c, "tar xvf /tmp/alertmanager-0.25.0.linux-amd64.tar.gz"]
  - [sh, -c, "sudo cp /alertmanager-0.25.0.linux-amd64/alertmanager /usr/local/bin"]
