@@ -36,6 +36,7 @@ runcmd:
  - [sh, -c, "wget -P /usr/share/nginx/html https://github.com/ta7575/sys-diplom/raw/main/config/site.tar"]
  - [sh, -c, "mv /usr/share/nginx/html/index.html /usr/share/nginx/html/index.html.bak"]
  - [sh, -c, "tar xvf /usr/share/nginx/html/site.tar -C /usr/share/nginx/html/"]
+ - [sh, -c, "chmod +r -R /usr/share/nginx/html/*"]
  - [systemctl, enable, filebeat.service]
  - [systemctl, enable, nginx.service]
  - [systemctl, start, --no-block, nginx.service]
