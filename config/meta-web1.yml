@@ -37,7 +37,7 @@ runcmd:
  - [systemctl, enable, filebeat.service]
  - [systemctl, enable, nginx.service]
  - [systemctl, start, --no-block, nginx.service]
- - [sh, -c, "echo 'Welcome to web server '$(hostname | cut -d '.' -f 1 ) > /usr/share/nginx/html/index.html"]
+ #- [sh, -c, "echo 'Welcome to web server '$(hostname | cut -d '.' -f 1 ) > /usr/share/nginx/html/index.html"]
  - [systemctl, restart, nginx.service]
  - [systemctl, start, --no-block, node_exporter.service]
  - [systemctl, start, --no-block, prometheus-nginxlog-exporter.service]
