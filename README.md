@@ -316,5 +316,29 @@ https://github.com/ta7575/sys-diplom/blob/main/config/backup.tf
 ` `  
 
 (Для тестирования создания снапшотов по расписанию выбраны значения snapshot_count = 1, expression = "30 * ? * *")
+`  `  
+
+
+### "Заливка" конфигурации Nginx и сайта  
+
+Листинг конфигурационного файла Nginx доступен по ссылке  
+
+https://github.com/ta7575/sys-diplom/blob/main/config/nginx.conf  
+
+Создаем веб-сайт состоящий из двух статических страниц. Создаем tar-архив каталога, содержащего файлы сайта.  
+Файл архива доступен по ссылке  
+
+https://github.com/ta7575/sys-diplom/raw/main/config/site.tar  
+
+Добавляем a файлы ansible-конфигураций веб-серверов web1.srv и web2.srv код, обеспечивающий загрузку конфигурации Nginx и сайта при сборке ифраструктуры  
+
+`  `  
+
+### Окончательная сборка инфраструктуры
+Скриншоты, на которых показана окончательная сборка инфраструктуры, приведены в документе Google Docs,  доступном по ссылке  
+`  `  
+https://docs.google.com/document/d/16P0qGpBB8mgY_5zhCpQ9rvqVb2Pc_6-uexoWT-OGSRg/edit?usp=sharing  
+
+
 
 
