@@ -86,7 +86,7 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 
 https://github.com/ta7575/sys-diplom/blob/main/config/main.tf  
 
-Листинг файлов terraform-конфигураций веб-серверов web1.srv и web2.srv доступен по ссылкам  
+Листинг файлов ansible-конфигураций веб-серверов web1.srv и web2.srv доступен по ссылкам  
 
 https://github.com/ta7575/sys-diplom/blob/main/config/meta-web1.yml  
 и  
