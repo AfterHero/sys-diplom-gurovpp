@@ -131,7 +131,7 @@ https://github.com/ta7575/sys-diplom/blob/main/grafana/meta-grafana.yml
 
 Рисунок 4.  
 
-Тестируем prometheus (рисунок 5, 6).  
+Тестируем работу сервера prometheus (рисунок 5, 6).  
 
 ![Рисунок 5](/img/img5.PNG)  
 Рисунок 5.  
