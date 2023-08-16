@@ -112,20 +112,20 @@ https://github.com/ta7575/sys-diplom/blob/main/config/meta-web2.yml
 
 ### Мониторинг
 
-Добавляем сервер prometheus (блок кода "Prometheus Server" в конфигурационном файле main.tf). Листинг файла terraform-конфигурации prometheus доступен по ссылке  
+Добавляем сервер prometheus (блок кода "Prometheus Server" в конфигурационном файле main.tf). Листинг файла ansible-конфигурации сервера prometheus доступен по ссылке  
 
 https://github.com/ta7575/sys-diplom/blob/main/prometheus/meta-prometheus.yml  
 
-Файл конфигурации prometheus - по ссылке  
+Листинг файла конфигурации сервера prometheus доступен по ссылке  
 
 https://github.com/ta7575/sys-diplom/blob/main/prometheus/prometheus.yml  
 
 
-Добавляем сервер визуализации grafana (блок кода Grafana Server в конфигурационном файле main.tf). Листинг файла terraform-конфигурации grafana доступен по ссылке  
+Добавляем сервер визуализации grafana - блок кода "Grafana Server" в конфигурационном файле main.tf. Листинг файла ansible-конфигурации сервера grafana доступен по ссылке  
 
 https://github.com/ta7575/sys-diplom/blob/main/grafana/meta-grafana.yml  
 
-Собираем конфигурацию терраформ (рисунок 4).  
+Собираем инфраструктуру в terraform  (рисунок 4).  
 
 ![Рисунок 4](/img/img4.PNG)  
 
