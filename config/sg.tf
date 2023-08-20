@@ -65,6 +65,13 @@ resource "yandex_vpc_security_group" "sg-private" {
     port              = 9093
   }
 
+  ingress {
+    protocol          = "ANY"
+    description       = "any"
+    predefined_target = "self_security_group"
+    from_port         = 0
+    to_port           = 65535
+  }
 
   ingress {
     protocol          = "ANY"
