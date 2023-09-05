@@ -1,5 +1,5 @@
 #
-cluster.name: netology 
+cluster.name: diplomgurov
 #
 node.name: node-1 
 node.roles: [master, data, ingest]
