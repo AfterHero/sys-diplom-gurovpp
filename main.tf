@@ -14,7 +14,7 @@ provider "yandex" {
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# Security bastion host
+# Хост-бастион безопасности
 
 resource "yandex_vpc_security_group" "group-bastion-host" {
   name        = "My security group bastion host"
@@ -33,7 +33,7 @@ resource "yandex_vpc_security_group" "group-bastion-host" {
   }
 }
 
-# Security group to allow incoming ssh traffic
+# Группа безопасности, разрешающая входящий ssh-трафик
 resource "yandex_vpc_security_group" "group-ssh-traffic" {
   name        = "My security group ssh traffic"
   network_id  = yandex_vpc_network.network-1.id
@@ -51,7 +51,7 @@ resource "yandex_vpc_security_group" "group-ssh-traffic" {
   }
 }
 
-# Security group webservers
+# Веб-серверы группы безопасности
 resource "yandex_vpc_security_group" "group-webservers" {
   name        = "My security group webservers"
   network_id  = yandex_vpc_network.network-1.id
@@ -83,7 +83,7 @@ resource "yandex_vpc_security_group" "group-webservers" {
   }
 }
 
-# Security group prometheus
+# Группа безопасности prometheus
 resource "yandex_vpc_security_group" "group-prometheus" {
   name        = "My security group prometheus"
   network_id  = yandex_vpc_network.network-1.id
@@ -102,7 +102,7 @@ resource "yandex_vpc_security_group" "group-prometheus" {
   }
 }
 
-# Security group public network grafana
+# Группы безопасности grafana
 resource "yandex_vpc_security_group" "group-public-network-grafana" {
   name        = "My security group public network grafana"
   network_id  = yandex_vpc_network.network-1.id
@@ -120,7 +120,7 @@ resource "yandex_vpc_security_group" "group-public-network-grafana" {
   }
 }
 
-# Security group elasticsearch
+# Группы безопасности elasticsearch
 resource "yandex_vpc_security_group" "group-elasticsearch" {
   name        = "My security group elasticsearch"
   network_id  = yandex_vpc_network.network-1.id
@@ -138,7 +138,7 @@ resource "yandex_vpc_security_group" "group-elasticsearch" {
   }
 }
 
-# Security group public network kibana
+# Группы безопасности kibana
 resource "yandex_vpc_security_group" "group-public-network-kibana" {
   name        = "My security group public network kibana"
   network_id  = yandex_vpc_network.network-1.id
@@ -156,7 +156,7 @@ resource "yandex_vpc_security_group" "group-public-network-kibana" {
   }
 }
 
-# Security group public application load balancer
+# Группы безопасности load balancer
 resource "yandex_vpc_security_group" "group-public-network-alb" {
   name        = "My security group public network application load balancer"
   network_id  = yandex_vpc_network.network-1.id
@@ -209,7 +209,7 @@ resource "yandex_vpc_subnet" "subnet-3" {
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# bastion host
+# Хост-бастион безопасности
 
 resource "yandex_compute_instance" "bastion-host" {
 
