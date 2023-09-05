@@ -7,9 +7,9 @@ terraform {
 }
 
 provider "yandex" {
-  token     = "y0_AgAAAAAigMO1AATuwQAAAADQDL-VA_XkPB_NRd6a9pn9NPUrQB3Iq-E"
-  cloud_id  = "b1gp7ge1s91h1b8qu2ck"
-  folder_id = "b1gh1ccg6m17qa5h94tq"
+  token     = "***"
+  cloud_id  = "***"
+  folder_id = "***"
 }
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
