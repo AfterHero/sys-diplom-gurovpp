@@ -1,0 +1,36 @@
+#cloud-config
+users:
+ - name: ansible
+   groups: sudo
+   shell: /bin/bash
+   sudo: ['ALL=(ALL) NOPASSWD:ALL']
+   ssh-authorized-keys:
+     - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKwjW1XoEfU1b6krtqxBE11GK0HsgUd7kRKoug7z+ppU
+
+disable_root: true
+timezone: Europe/Moscow
+repo_update: true
+repo_upgrade: true
+
+dnf:
+  preserve_sources_list: true
+
+packages:
+
+  - wget
+
+runcmd:
+ - [sh, -c, "wget -P /tmp/ https://www.dropbox.com/s/6m7wvu651mh64nz/grafana-enterprise-10.0.0-1.x86_64.rpm"]
+ - [sh, -c, "sudo dnf -y install  /tmp/grafana-enterprise-10.0.0-1.x86_64.rpm"]
+ - [sh, -c, "wget -P /tmp/ https://github.com/ta7575/sys-diplom/raw/main/grafana/grafana.tar"]
+ - [sh, -c, "wget -P /tmp/ https://github.com/ta7575/sys-diplom/raw/main/grafana/provisioning.tar"] 
+ 
+ - [sh, -c, "tar xvf /tmp/provisioning.tar"]
+ - [sh, -c, "tar xvf /tmp/grafana.tar"]
+ - [sh, -c, "cp -r  /grafana /var/lib/"]
+ - [sh, -c, "cp -r /provisioning /etc/grafana/"]
+
+ - [sh, -c, "chown -R grafana:grafana /etc/grafana"]
+ - [sh, -c, "chown -R grafana:grafana /var/lib/grafana"]
+ - [systemctl, enable, grafana-server.service]
+ - [systemctl, start, --no-block, grafana-server.service]
