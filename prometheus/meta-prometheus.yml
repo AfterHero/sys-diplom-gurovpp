@@ -5,10 +5,10 @@ users:
    shell: /bin/bash
    sudo: ['ALL=(ALL) NOPASSWD:ALL']
    ssh-authorized-keys:
-     - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKwjW1XoEfU1b6krtqxBE11GK0HsgUd7kRKoug7z+ppU
+     - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMf7dpd1leJTwyOGvY0l14laOMM52ClRz2SfvScVoort
 
 disable_root: true
-timezone: Europe/Moscow
+timezone: Europe/Omsk
 repo_update: true
 repo_upgrade: true
 dnf:
