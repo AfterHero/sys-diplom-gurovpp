@@ -20,12 +20,12 @@ packages:
   - nginx
 
 runcmd:
- - [sh, -c, "wget -P /tmp/ https://github.com/martin-helmich/prometheus-nginxlog-exporter/releases/download/v1.10.0/prometheus-nginxlog-exporter_1.10.0_linux_amd64.rpm"]
+ - [sh, -c, "wget -P /tmp/ https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/prometheus-nginxlog-exporter_1.10.0_linux_amd64.rpm"]
  - [sh, -c, "sudo dnf -y install  /tmp/prometheus-nginxlog-exporter_1.10.0_linux_amd64.rpm"]
  - [sh, -c, "sudo wget -P /etc/systemd/system/ https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/config/prometheus-nginxlog-exporter.service"]
  - [sh, -c, "wget -P /etc/ https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/config/nginxlog_exporter.yml"]
  - [sh, -c, "wget -P /etc/systemd/system/ https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/config/node_exporter.service"]
- - [sh, -c, "wget -P /tmp/ https://github.com/prometheus/node_exporter/releases/download/v1.6.0/node_exporter-1.6.0.linux-amd64.tar.gz"]
+ - [sh, -c, "wget -P /tmp/ https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/node_exporter-1.6.0.linux-amd64.tar.gz"]
  - [sh, -c, "tar xvf /tmp/node_exporter-1.6.0.linux-amd64.tar.gz"]
  - [sh, -c, "cp -r /node_exporter-1.6.0.linux-amd64/node_exporter /usr/local/bin"]
  - [sh, -c, "sudo useradd --no-create-home --shell /bin/false node_exporter"]
