@@ -1,0 +1,8 @@
+#cloud-config
+users:
+ - name: gurov
+   groups: sudo
+   shell: /bin/bash
+   sudo: ['ALL=(ALL) NOPASSWD:ALL']
+   ssh-authorized-keys:
+     - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC4RyDbGAMkPh8FNR9hPUNiahWJxdAcw2T7lYn67maFXjXWj5jL+F9m9Y18ezmMeb8Z/9ndSIIR5AWJ4Msy8b8R7thD71bdN24FZIQNUF31+AbIduNoz6ukh01ss9fVHiDQ+P0zqgo3GXbRHx8XCe6XslVgL7NPMAHqWNybNjTjrDTg9rHuTa/blaUFenhbvpFr5XF5M7ahb8igqou0oSJBjyT2InsV/bd4P54hqIPlZiZWGtx2iktbtyou65QMOlW/ITWgcjZQURaIXpRqRIn4XD8A8YIuecIvmCbO3yivvIrfY3jRReSWdf4RCKPoiAtVmmtjND7ugQamvlcwi6yKDTGh7wwWFUAuYgUYQqmUYj/YtxL/NqOl5UWtrv+WvGqFXq7j0OFfuWWkh73gVwujuYm4HOWYtembJVWlhdiFXbnoz+e1S7eWhp0jHCvJCIaUBY20p6MEkhzBeikJ1QWcmUNpfLbhfMgxi7cMSuVJoxMr9uAPz3RxjmgL0xrPHrM= admin@ZalmanR3
