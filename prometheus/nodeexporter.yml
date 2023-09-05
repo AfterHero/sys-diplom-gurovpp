@@ -1,0 +1,18 @@
+
+- targets:
+  - 'localhost:9090'
+  labels:
+    project: 'localhost'
+    env: 'prometheus'
+
+- targets:
+  - 'web1.srv:9100'
+  labels:
+    project: 'web1'
+    env: 'ya_cloud_b'
+
+- targets:
+  - 'web2.srv:9100'
+  labels:
+    project: 'web2'
+    env: 'ya_cloud_a'
