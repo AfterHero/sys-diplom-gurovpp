@@ -1,7 +1,0 @@
-# Задание можно посмотреть по ссылке:
-## [Задание дипломной работы](https://github.com/netology-code/sys-diplom)
-
-                           
-# 1. Для развертки инфраструкты используем Terraform:
-
-[Файл конфигурации Terraform main.tf](https://github.com/stanislavarutyunov/diplom/blob/main/netology-diplom/terraform/main.tf)
