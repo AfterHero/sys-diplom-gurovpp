@@ -6,7 +6,7 @@
 # [Конфигурационный файл Terraform main.tf](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/terraform/main.tf)
 # [Файл с настройками пользователя meta.txt](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/terraform/meta.txt)
 
-## Инициализируем terraform:
+## Terraform init:
 ![terraforminit](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/terraform%20init.jpg)
 
 ## Terraform validate:
