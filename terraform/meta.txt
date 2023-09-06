@@ -1,0 +1,8 @@
+#cloud-config
+users:
+ - name: gurov
+   groups: sudo
+   shell: /bin/bash
+   sudo: ['ALL=(ALL) NOPASSWD:ALL']
+   ssh-authorized-keys:
+     - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIORYAu8fkgnpKY2Hjm/nYlvmlAOgGD5tcKg26fOyDlPg aftermatch@master
