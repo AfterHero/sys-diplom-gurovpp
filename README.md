@@ -10,10 +10,10 @@
 ![terraforminit](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/terraform%20init.jpg)
 
 ## Terraform validate:
-![terrvalvalidate](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/terraform%20validate.jpg)
+![terraformvalidate](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/terraform%20validate.jpg)
 
 ## Terraform apply:
-![terrvalapply](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/terraform%20apply.jpg)
+![teraformapply](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/terraform%20apply.jpg)
 
 ### Созданная инфраструктура на yandex.cloud:
 ![yandex.cloud](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/%D0%B4%D0%B0%D1%88%D0%B1%D0%BE%D1%80%D0%B4%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%D0%B0.jpg)
@@ -24,6 +24,21 @@
 
 # 2. Подключаемся к нашей виртуальной машине Bastion-host и через него прокидываем ключи доступа для всех хостов.
 ### На моем примере я уже заранне согласовал подключения со всеми хостами по ssh заранее, все хосты доступны из под bastion-host
-![terrvalvalidate](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/bastionssh.jpg)
+![bastionhost](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/bastionssh.jpg)
 
 # 3. С помощью Ansible устанавливаем и настраиваем нужные нам сервисы на хостах:
+
+## 1. Устанавливаем nginx, node-exporter, nginx-logexporter, filebeat
+### [Servers-playbook.yml](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/diplom/ansible/servers-playbook.yml)
+![serversplaybook](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/serversplaybook.jpg)
+![serversplaybook](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/serversplaybook1.jpg)
+### Адрес сайта: http://158.160.112.144
+### Проверяем доступность сайта (curl -v 158.160.112.144)
+![site](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/site.jpg)
+![site2](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/site2.jpg)
+
+## 2. Устанавливаем prometheus и grafana
+### [prometheus-playbook.yml](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/diplom/ansible/prometheus-playbook.yml)
+### ![prometheus](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/prometheus.jpg)
+### [grafana-playbook.yml](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/diplom/ansible/grafana-playbook.yml)
+### ![grafana](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/grafana.jpg)
