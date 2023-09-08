@@ -40,5 +40,11 @@
 ## 2. Устанавливаем prometheus и grafana
 ### [prometheus-playbook.yml](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/diplom/ansible/prometheus-playbook.yml)
 ### ![prometheus](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/prometheus.jpg)
+### ![prometheustargets](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/prometheustargets.jpg)
+### Адрес сайта: http://51.250.44.251:9090
+--------------------------------------------------------------------------------------------------------------------------------------
 ### [grafana-playbook.yml](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/diplom/ansible/grafana-playbook.yml)
 ### ![grafana](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/grafana.jpg)
+### ![grafanametrics](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/grafanametrics.jpg)
+### Адрес сайта: http://51.250.37.98:3000
+
