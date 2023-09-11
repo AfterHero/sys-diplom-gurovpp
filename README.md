@@ -28,7 +28,7 @@
 
 # 3. С помощью Ansible устанавливаем и настраиваем нужные нам сервисы на хостах:
 
-## 1. Устанавливаем nginx, node-exporter, nginx-logexporter, filebeat
+## 3.1 Устанавливаем nginx, node-exporter, nginx-logexporter, filebeat
 ### [Servers-playbook.yml](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/diplom/ansible/servers-playbook.yml)
 ![serversplaybook](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/serversplaybook.jpg)
 ![serversplaybook](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/serversplaybook1.jpg)
@@ -37,14 +37,23 @@
 ![site](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/site.jpg)
 ![site2](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/site2.jpg)
 
-## 2. Устанавливаем prometheus и grafana
+## 3.2 Устанавливаем prometheus и grafana
 ### [prometheus-playbook.yml](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/diplom/ansible/prometheus-playbook.yml)
 ### ![prometheus](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/prometheus.jpg)
 ### ![prometheustargets](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/prometheustargets.jpg)
-### Адрес сайта: http://51.250.44.251:9090
+### Адрес prometheus: http://51.250.44.251:9090
 --------------------------------------------------------------------------------------------------------------------------------------
 ### [grafana-playbook.yml](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/diplom/ansible/grafana-playbook.yml)
 ### ![grafana](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/grafana.jpg)
 ### ![grafanametrics](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/grafanametrics.jpg)
-### Адрес сайта: http://51.250.37.98:3000
+### Адрес grafana: http://51.250.37.98:3000
 
+## 3.3 Устанавливаем elasticsearch и kibana
+### [elasticsearch-playbook.yml](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/diplom/ansible/elasticsearch-playbook.yml)
+### ![elasticsearch](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/elasticsearch.jpg)
+### Запущенный контейнер docker c ELK
+### ![elasticdocker](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/dockerelstic.jpg)
+---------------------------------------------------------------------------------------------------------------------------------------
+### [kibana-playbook.yml](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/diplom/ansible/kibana-playbook.yml)
+### ![kibana](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/playbookkibana.jpg)
+### Адрес kibana: http://51.250.34.38:5601
