@@ -46,8 +46,7 @@
 ### [grafana-playbook.yml](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/diplom/ansible/grafana-playbook.yml)
 ### ![grafana](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/grafana.jpg)
 ### ![grafanametrics](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/grafanametrics.jpg)
-### Адрес grafana: http://51.250.47.218:3000
-
+### Адрес grafana: http://51.250.47.218:3000/d/4aBQsjSmz34/servers-metrics?orgId=1&refresh=10s
 ## 3.3 Устанавливаем elasticsearch и kibana
 ### [elasticsearch-playbook.yml](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/diplom/ansible/elasticsearch-playbook.yml)
 ### ![elasticsearch](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/elasticsearch.jpg)
