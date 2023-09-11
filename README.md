@@ -3,8 +3,8 @@
 
 
 # 1. Для развертки инфраструкты используем Terraform:
-### [Конфигурационный файл Terraform main.tf](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/terraform/main.tf)
-### [Файл с настройками пользователя meta.txt](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/terraform/meta.txt)
+### [Конфигурационный файл Terraform main.tf](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/diplom/terraform/main.tf)
+### [Файл с настройками пользователя meta.txt](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/diplom/terraform/meta.txt)
 
 ## Terraform init:
 ![terraforminit](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/terraform%20init.jpg)
