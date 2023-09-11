@@ -57,3 +57,5 @@
 ### [kibana-playbook.yml](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/diplom/ansible/kibana-playbook.yml)
 ### ![kibana](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/playbookkibana.jpg)
 ### Адрес kibana: http://51.250.36.1:5601
+### ![elasticsearchlogs](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/elklogs.jpg)
+### ![elasticsearchlogs2](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/elklogs2.jpg)
