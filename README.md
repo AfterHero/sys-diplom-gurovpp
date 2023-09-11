@@ -41,7 +41,7 @@
 ### [prometheus-playbook.yml](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/diplom/ansible/prometheus-playbook.yml)
 ### ![prometheus](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/prometheus.jpg)
 ### ![prometheustargets](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/prometheustargets.jpg)
-### Адрес prometheus: http://51.250.44.251:9090
+### Адрес prometheus: http://51.250.44.251:9090/classic/targets
 --------------------------------------------------------------------------------------------------------------------------------------
 ### [grafana-playbook.yml](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/diplom/ansible/grafana-playbook.yml)
 ### ![grafana](https://github.com/AfterHero/sys-diplom-gurovpp/blob/main/download/grafana.jpg)
