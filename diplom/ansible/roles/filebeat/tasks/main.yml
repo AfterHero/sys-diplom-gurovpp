@@ -17,3 +17,18 @@
 
 - name: setup filebeat
   shell: 'filebeat setup'
+
+- name: Edit service filebeat/nginx
+  template:
+    src: modules.d/nginx.yml.j2
+    dest: /etc/filebeat/modules.d/nginx.yml
+
+- name: Edit service filebeat/nginx
+  template:
+    src: modules.d/system.yml.j2
+    dest: /etc/filebeat/modules.d/system.yml
+
+- name: Start service filebeat
+  ansible.builtin.service:
+    name: filebeat.service
+    state: restarted
