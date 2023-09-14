@@ -2,10 +2,10 @@
 - name: restart nginx    
   service:
     name: nginx
-    state: restarted
+    state: reload
         
 - name: nginx systemd
   systemd:
     name: nginx
     enabled: yes
-    state: restarted
+    state: reload
