@@ -3,5 +3,5 @@
   systemd:
     daemon_reload: yes
     enabled: yes
-    state: restarted
+    state: reload
     name: prometheus-nginxlog-exporter.service
